@@ -1,0 +1,724 @@
+* {
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background-color:#ffffff;
+}
+
+body{
+    font-size: 16px;
+    margin: 0 auto;
+    min-width: 414px;
+    line-height: 1.5em;
+    max-width: 1280px;
+}
+
+/* h tag, p, li, header */
+h1, h2, h3{
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+h2{
+    font-size: 30px;
+    padding-bottom: 4%;
+}
+
+h3{
+    font-size: 25px;
+}
+
+p, li{
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header p{ 
+    display: none
+}
+
+/* Main section */
+
+
+#mainSection{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    position: relative;
+}
+
+/* main navigation*/
+
+#mainNav{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 75px;
+    border: 1px solid rgba(148, 147, 147);
+    box-shadow: 0 2px 5px rgba(148, 147, 147, 0.7);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#mainNav h2{
+    display: none;
+}
+
+#mainNav nav{
+    height: 100%;
+}
+
+#mainNav nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 73px;
+}
+
+#mainNav nav li{
+    list-style: none;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 25px;
+}
+
+.logoContainer{
+    width: 45%;
+    background-color: #eb5428;
+    vertical-align: middle;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+
+}
+
+#logo{
+    height: 75px;
+}
+
+.menuContainer, .signContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100px;
+    height: 100%;
+}
+
+/* search bar */
+
+#search {
+    position: absolute;
+    top: 120px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#searchBar{
+    padding: 15px 45% 15px 0;
+    border: 2px solid #EB5428; 
+}
+
+#search label{
+    width: fit-content;
+    background-color: #EB5428;
+    padding: 1px 1px 1px 0;
+}
+
+/* steet tacos section
+
+tacos intro
+*/
+
+#streetTacos {
+    display: grid;
+    gap: 20px;
+    padding: 200px 0 0;
+}
+#streetTacos h1{
+    padding-top: 5%;
+    font-size: 40px;
+    text-align: center;
+}
+
+#streetTacos h2{
+    text-align: center;
+}
+
+.tacosIntro p{
+    padding: 2%;
+}
+
+.tacosNav{
+    width: 100%;
+}
+
+.tacosNav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 25px;
+}
+
+.tacosNav li{
+    list-style: none;
+    color: #EB5428;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.tacosLi {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 25px;
+}
+
+.tacosIntro{
+    display: grid;
+    grid-template-rows: repeat(4, fit-content);
+    justify-items: center;
+    gap: 10px;
+    padding-top: 5%;;
+}
+
+.tacosIntro img{
+    width: 100%;
+    padding: 0;
+}
+
+/* street tacos details, ingredients, directions sections */
+
+#details ul{
+    list-style: none;
+}
+
+#details ul b{
+    padding-right: 15px;
+}
+
+#details{
+    padding-left: 2%;
+}
+
+#ingredients, #directions {
+    padding-left: 7%;
+}
+
+#ingredients{
+    line-height: 2em;
+}
+
+#directions li{
+    padding-bottom: 5%;
+}
+
+/* Side dish section */
+
+#sideDish{
+    width: 100%;
+    padding-bottom: 40px;
+    background-color: #7ABFBF;
+}
+
+#sideDish h2{
+    padding: 10px 0 20px 0;
+    text-align: center;
+}
+
+#sideDish h3{
+    text-transform: uppercase;
+}
+
+#sideDish .starRate{
+    display: none;
+}
+
+#sideDish .rating{
+    font-weight: bold;
+}
+
+.dishDescription {
+    display: grid;
+    grid-template-columns: 190px 1fr;
+    grid-template-rows: repeat(3, 40px);
+    padding-bottom: 50px;
+
+}
+
+#sideDish section:last-child {
+    padding-bottom: 0;
+}
+
+.dishDescription img{
+    width: 150px;
+    padding-left: 10px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+
+}
+
+.dishDescription p{
+    align-self: center;
+ }
+
+.dishDescription h3{
+    align-self: center;
+ }
+
+ /* social media links section */
+
+#mediaLinks{
+    width: 100%;
+    padding: 50px 10px;
+    border-top: 20px solid #ebe9e98c;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#mediaLinks h2{
+    display: none;
+}
+
+#mediaLinks ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around
+}
+
+#mediaLinks li{
+    list-style: none;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #eb5428;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 25px;
+}
+
+/* footer */
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 25px 25px;
+    justify-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer p{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+    font-size: 25px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+footer img {
+    grid-row: 1/2;
+    width: 265px;
+}
+
+/* small viewport queries */
+
+@media screen and (min-width: 414px) {
+
+    #navItems{
+        display: none;
+    }
+}
+
+/* medium viewport queries */
+
+@media screen and (min-width: 768px) {
+
+    #mainSection{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    #mainNav{
+        height: 250px;
+    }
+    
+    #mainNav nav ul{
+        display: grid;
+        grid-template-columns: 70px 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        height: 100%;
+        justify-items: end;
+        align-items: start;
+    }
+    #navItems{
+        display: flex;
+        flex-direction: row;
+        grid-column: 1 / span 3;
+        grid-row: 2 / 3;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    #navItems li{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        color: #eb5428;
+        height: 90%;
+        justify-content: space-around;
+
+    }
+
+    #navItems li img{
+        height: 70px;
+    }
+
+    .menuContainer{
+        display: none;
+    }
+
+    .logoContainer{
+        width: 100%;
+        height: 70%;
+        justify-items: start;
+    }
+
+    .signContainer {
+        grid-row: 1 / 2;
+        grid-column: 3 / 4;
+        justify-content: flex-end;
+    }
+
+    #search {
+        top: 20px;
+        left: 220px;
+        width: 60%;
+    }
+
+    #streetTacos {
+        padding: 280px 0 0;
+        grid-template-columns: 230px 1fr 1fr;
+        grid-column: 1 / span 2;
+    }
+
+    #streetTacos h1 {
+        width: 100%;
+        height: 100%;
+        text-align: start;
+        padding-left: 15px;
+        font-size: 50px;
+    }
+
+    .tacosIntro{
+        padding-top: 0;
+        gap: 0;
+        grid-column: 1 / span 3;
+    }
+
+    .tacosNav{
+        grid-row: 1 / 2;
+        padding-bottom: 20px;
+        background-color: rgba(184, 180, 180, 0.355);
+    }
+
+    .tacosNav ul{
+        padding: 20px;
+        justify-content: space-around;
+    }
+
+    #details {
+        text-align: center;
+        grid-column: 1 / span 3;
+    }
+
+    #ingredients {
+        padding-left: 25px;
+        grid-row: 4 / 5;
+    }
+
+    #directions {
+        padding: 5%;
+        grid-column: 2 / span 2;
+        grid-row: 4/5;
+    }
+
+    #sideDish{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 45px 150px 190px;
+        grid-column: 1 / span 2;
+        padding-bottom: 0;
+    }
+
+    #sideDish h2{
+        grid-column: 1 / span 2;
+        grid-row: 1 / 2;
+    }
+
+    .dishDescription {
+        justify-content: start;
+        grid-template-columns: 120px 1fr;
+        grid-template-rows: repeat(3, 45px);
+        align-items: center;
+        column-gap: 10px;
+    }
+
+    .dishDescription p {
+        align-self: center;
+    }
+
+    .dishDescription img {
+        width: 100%;
+    }
+
+    .mexRice{
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        padding: 25px 0 0 0;
+    }
+
+    .salsa{
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        padding: 25px 0 0 0;
+    }
+
+    .guac{
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        padding: 35px 0 30px 0;
+    }
+
+    .tortillas{
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+        padding: 35px 0 30px 0;
+    }
+
+    .starHolder{
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .stars{
+        padding-left: 5px;
+    }
+
+    #mediaLinks{
+        grid-column: 2 / 3;
+        border:none;
+        padding: 45px 0 0 0;
+        flex-direction: column;
+    }
+
+    footer{
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        padding-top: 15%;
+    }
+
+}
+
+/* large viewport queries */
+
+@media screen and (min-width: 1280px) {
+
+    #mainNav {
+        height: 130px;
+    }
+
+    #mainNav nav ul {
+        display: grid;
+        grid-template-columns: 80px 1fr 100px;
+        grid-template-rows: 1fr;
+    }
+
+    #navItems{
+        justify-content: space-evenly;
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        padding: 0 5% 0 5%;
+    }
+
+    .logoContainer {
+        height: 100%;
+        grid-column: 1 / 2;
+    }
+
+    #logo{
+        height: 100%;
+    }
+
+    .signContainer{
+        width: 100%;
+        justify-content: center;
+    }
+
+    #search {
+        top: 205px;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%,-50%);
+    }
+
+    #searchBar {
+        padding: 15px 255px 15px 0;
+    }
+
+    #streetTacos{
+        grid-template-rows: 55px 750px 130px 420px;
+        padding-top: 270px;
+        background-color: #F2F2F2;
+        row-gap: 0;
+    }
+
+    #streetTacos h1{
+        text-align: center;
+        grid-column: 1 / span 3;
+        padding: 0 0 5px 0;
+    }
+
+    .tacosIntro {
+        display: grid;
+        grid-template-columns: 125px 500px 650px;
+        grid-template-rows: 100px 1fr;
+        
+    }
+
+    .tacosNav {
+        grid-row: 1 / span 2;
+        background-color: #ffffff;
+        border: 2px solid #eb5428;
+    }
+
+    .tacosIntro img {
+        grid-column: 2 / 3;
+        grid-row: 1 / span 2;
+    }
+
+    #streetTacos .lastP {
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+    }
+
+    .tacosNav {
+        padding-bottom: 0;
+    }
+
+    .tacosNav ul {
+        flex-direction: column;
+        padding: 0;
+        height: 60%;
+        width: 100%;
+    }
+
+    #details {
+        height: 130px;
+        padding: 25px 0;
+        background-color: black;
+        color: #7ABFBF;
+
+    }
+
+    #details h2 {
+        padding: 0;
+    }
+
+    #details ul{
+        display: flex;
+        height: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+
+    #details ul li{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #ingredients, #directions {
+        padding-top: 20px;
+    }
+
+    #directions ol li{
+        padding-bottom: 15px;
+    }
+
+    #sideDish {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 60px 430px;
+    }
+
+    #sideDish h2 {
+        padding: 15px 0 0 0;
+        grid-column: 1 / span 4;
+        grid-row: 1 / 2;
+    }
+
+    .dishDescription{
+        padding-left: 30px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 140px 130px 45px 45px 45px;
+    }
+    .dishDescription img{
+        grid-row: 1 / 3;
+        width: 85%; 
+    }
+
+    .guac {
+        grid-column: 3 /  4;
+        grid-row: 2 / 4;
+    }
+
+    .tortillas {
+        grid-column: 4 /  5;
+        grid-row: 2 / 4;
+    }
+
+    .mexRice, .salsa, .tortillas, .guac {
+        padding: 0 0 0 40px;
+    }
+
+    #mediaLinks {
+        padding-top: 65px;
+    }
+
+    footer{
+        padding-top: 45px;
+        grid-template-rows: 35px 35px 280px;
+        grid-template-columns: 280px 175px;
+    }
+
+    footer img{
+        grid-column: 1 / 2;
+        grid-row: 1 / 4;
+    }
+
+    #copyright{
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+
+    #cheesington {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+    }
+}
